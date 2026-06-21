@@ -207,7 +207,7 @@ site-sniper-ai/
 ├── pocketbase/
 │   └── pb_data/                     # SQLite database directory
 │
-├── middleware.ts                     # Auth route protection + security headers
+├── proxy.ts                        # Auth route protection + security headers (Next.js 16)
 ├── next.config.ts                   # Next.js config + security headers
 ├── ARCHITECTURE.md                  # Full architecture documentation
 └── CLAUDE.md                        # AI assistant instructions
