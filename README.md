@@ -4,6 +4,8 @@
 
 **Goal:** $1,500/mo revenue · **Budget:** $0 infrastructure
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frbkhan007%2FSiteSniper-AI)
+
 ---
 
 ## What It Does
@@ -73,8 +75,8 @@ Anyone can roast any website for free on the landing page — no signup required
 ### 1. Clone & Install
 
 ```bash
-git clone <your-repo-url>
-cd site-sniper-ai
+git clone https://github.com/rbkhan007/SiteSniper-AI.git
+cd SiteSniper-AI
 npm install
 ```
 
@@ -165,7 +167,7 @@ site-sniper-ai/
 │   ├── SearchInput.tsx              # Search field
 │   ├── Pagination.tsx               # Page navigation
 │   ├── ErrorBoundary.tsx            # Class-based error boundary
-│   └── ThemeProvider.tsx            # Dark/light theme wrapper
+│   └── ModeToggle.tsx               # Light/Dark/System theme dropdown
 │
 ├── lib/
 │   ├── auth.ts                      # PocketBase auth + RBAC + tier limits
