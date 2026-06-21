@@ -82,7 +82,13 @@ npm install
 
 ### 2. Environment Variables
 
-Create a `.env` file in the project root:
+Create a `.env` file in the project root (or copy `.env.example`):
+
+```bash
+cp .env.example .env
+```
+
+Then fill in your keys:
 
 ```env
 # PocketBase Admin (for server-side operations)
@@ -99,6 +105,8 @@ RESEND_API_KEY=your_resend_api_key
 STRIPE_SECRET_KEY=your_stripe_secret_key
 STRIPE_WEBHOOK_SECRET=your_stripe_webhook_signing_secret
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
+NEXT_PUBLIC_STRIPE_PRICE_ID_GROWTH=price_your_growth_price_id
+NEXT_PUBLIC_STRIPE_PRICE_ID_SCALE=price_your_scale_price_id
 
 # App URL
 NEXT_PUBLIC_APP_URL=http://localhost:3000
