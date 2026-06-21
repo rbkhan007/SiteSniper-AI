@@ -4,8 +4,6 @@
 
 **Goal:** $1,500/mo revenue · **Budget:** $0 infrastructure
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frbkhan007%2FSiteSniper-AI)
-
 ---
 
 ## What It Does
@@ -75,20 +73,14 @@ Anyone can roast any website for free on the landing page — no signup required
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/rbkhan007/SiteSniper-AI.git
-cd SiteSniper-AI
+git clone <your-repo-url>
+cd site-sniper-ai
 npm install
 ```
 
 ### 2. Environment Variables
 
-Create a `.env` file in the project root (or copy `.env.example`):
-
-```bash
-cp .env.example .env
-```
-
-Then fill in your keys:
+Create a `.env` file in the project root:
 
 ```env
 # PocketBase Admin (for server-side operations)
@@ -105,8 +97,6 @@ RESEND_API_KEY=your_resend_api_key
 STRIPE_SECRET_KEY=your_stripe_secret_key
 STRIPE_WEBHOOK_SECRET=your_stripe_webhook_signing_secret
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
-NEXT_PUBLIC_STRIPE_PRICE_ID_GROWTH=price_your_growth_price_id
-NEXT_PUBLIC_STRIPE_PRICE_ID_SCALE=price_your_scale_price_id
 
 # App URL
 NEXT_PUBLIC_APP_URL=http://localhost:3000
@@ -175,7 +165,7 @@ site-sniper-ai/
 │   ├── SearchInput.tsx              # Search field
 │   ├── Pagination.tsx               # Page navigation
 │   ├── ErrorBoundary.tsx            # Class-based error boundary
-│   └── ModeToggle.tsx               # Light/Dark/System theme dropdown
+│   └── ThemeProvider.tsx            # Dark/light theme wrapper
 │
 ├── lib/
 │   ├── auth.ts                      # PocketBase auth + RBAC + tier limits
@@ -207,7 +197,7 @@ site-sniper-ai/
 ├── pocketbase/
 │   └── pb_data/                     # SQLite database directory
 │
-├── proxy.ts                        # Auth route protection + security headers (Next.js 16)
+├── middleware.ts                     # Auth route protection + security headers
 ├── next.config.ts                   # Next.js config + security headers
 ├── ARCHITECTURE.md                  # Full architecture documentation
 └── CLAUDE.md                        # AI assistant instructions

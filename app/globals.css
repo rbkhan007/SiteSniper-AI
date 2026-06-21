@@ -39,7 +39,7 @@
 
 @variant dark (&:where(.dark, .dark *));
 
-.dark {
+@dark {
   --background: #030712;
   --foreground: #f9fafb;
   --muted: #1f2937;
