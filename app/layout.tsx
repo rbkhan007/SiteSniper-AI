@@ -8,6 +8,7 @@ import { ToastProvider } from "@/components/Toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://sitesniper.ai"),
   title: {
     default: "SiteSniper AI - Roast Any Website, Generate Cold Emails",
     template: "%s | SiteSniper AI",
