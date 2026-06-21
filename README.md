@@ -4,6 +4,8 @@
 
 **Goal:** $1,500/mo revenue · **Budget:** $0 infrastructure
 
+**Author:** [Rakibul Hasan](https://github.com/rbkhan007) (rbkhan007)
+
 ---
 
 ## What It Does
@@ -73,8 +75,8 @@ Anyone can roast any website for free on the landing page — no signup required
 ### 1. Clone & Install
 
 ```bash
-git clone <your-repo-url>
-cd site-sniper-ai
+git clone https://github.com/rbkhan007/SiteSniper-AI.git
+cd SiteSniper-AI
 npm install
 ```
 
@@ -129,7 +131,7 @@ Open [http://localhost:3000](http://localhost:3000).
 ## Project Structure
 
 ```
-site-sniper-ai/
+SiteSniper-AI/
 ├── app/
 │   ├── page.tsx                     # Landing page (hero, features, pricing, CTA)
 │   ├── login/page.tsx               # Email-based login
@@ -149,6 +151,7 @@ site-sniper-ai/
 ├── components/
 │   ├── Navbar.tsx                   # Auth nav, credits, tier badge, mobile menu
 │   ├── Footer.tsx                   # Links, legal, branding
+│   ├── ModeToggle.tsx               # Light/dark/system theme switcher
 │   ├── ViralRoastEngine.tsx         # Landing page viral hook
 │   ├── BulkProcessor.tsx            # Client-side queue processor
 │   ├── CampaignCard.tsx             # Campaign list card
@@ -164,8 +167,7 @@ site-sniper-ai/
 │   ├── ConfirmDialog.tsx            # Confirmation dialog
 │   ├── SearchInput.tsx              # Search field
 │   ├── Pagination.tsx               # Page navigation
-│   ├── ErrorBoundary.tsx            # Class-based error boundary
-│   └── ThemeProvider.tsx            # Dark/light theme wrapper
+│   └── ErrorBoundary.tsx            # Class-based error boundary
 │
 ├── lib/
 │   ├── auth.ts                      # PocketBase auth + RBAC + tier limits
@@ -200,7 +202,9 @@ site-sniper-ai/
 ├── middleware.ts                     # Auth route protection + security headers
 ├── next.config.ts                   # Next.js config + security headers
 ├── ARCHITECTURE.md                  # Full architecture documentation
-└── CLAUDE.md                        # AI assistant instructions
+├── CLAUDE.md                        # AI assistant instructions
+├── LICENSE                          # MIT License
+└── package.json                     # Dependencies and scripts
 ```
 
 ---
@@ -380,4 +384,28 @@ For production, run PocketBase on a VPS or use a managed hosting service:
 
 ## License
 
-Private — All rights reserved.
+MIT License
+
+Copyright (c) 2026 [Rakibul Hasan](https://github.com/rbkhan007)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+<p align="center">Built by <a href="https://github.com/rbkhan007">Rakibul Hasan</a></p>

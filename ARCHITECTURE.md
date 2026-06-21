@@ -95,7 +95,7 @@ site-sniper-ai/
 │
 ├── components/
 │   ├── Navbar.tsx                        # Nav with auth, credits, mobile menu
-│   ├── ThemeProvider.tsx                 # Dark/light theme wrapper
+│   ├── ModeToggle.tsx                    # Light/dark/system theme switcher
 │   ├── Footer.tsx                        # Shared footer (links, legal)
 │   ├── ViralRoastEngine.tsx              # Landing page viral hook
 │   ├── BulkProcessor.tsx                 # Client-side queue processor
